@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    color:hsl(298, 13%, 35%);
+    background-color: hsl(296, 13%, 22%);
+    padding: 10px 20px;
+    margin: 5px;
+} 

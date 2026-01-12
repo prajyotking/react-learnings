@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans';
+  color: rgb(0, 0, 0);
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.parent{
+  display: flex;
+  gap: 12px;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    display: grid;
+    height: 270px;
+    border-radius: 20px;
+    width: 211px;
+    background-color: white;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+
+
+div img{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #919191;
+}
+
+.top button{
+    
+    position: absolute;
+    color: hsl(0deg 2.56% 75.92%);
+    border: 1px solid hsl(0deg 2.56% 75.92%);
+    background-color: transparent;
+    right: 11px;
+    top: 11px;
+    gap: 5px;
+    border-radius: 4px;
+    /* text-align: center; */
+    width: 71px;
+    height: 30px;
+    /* font-size: 19px; */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.centre h4 span{
+    font-size: x-small;
+    font-weight: 700;
+    color: hsl(0deg 2.56% 75.92%);
+}
+
+.bottom h4:nth-child(2){
+  font-size: x-small;
+  font-weight: 700;
+  color: hsl(0deg 2.56% 75.92%);
+}
+.bottom{
+  position: relative;
+  padding-bottom: 23px;
+  
+  border-top: 1px solid hsl(0deg 2.56% 75.92%);
+ }
+
+.bottom button{
+  position: absolute;
+    right: 0px;
+    top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+   margin-top: 7px;
+   column-width: 600;
+}
+.bottom h4:nth-child(1) {
+    margin-top: 7px;
+}
+
+.centre div h4{
+  background-color: hsl(0deg 2.56% 75.92%);
+     margin: 5px;
+    padding: 5px;
+    font-size: x-small;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+.centreContainer{
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+
+
+
