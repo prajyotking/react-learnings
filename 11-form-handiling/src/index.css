@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 40px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+button{
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 66px;
+}

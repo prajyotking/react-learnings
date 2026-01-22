@@ -1,0 +1,52 @@
+body{
+  background: #333;
+}
+.box1{
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  height: 300px;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.btn1,
+.btn2{
+  height: 50px;
+  width: 100px;
+  color: white;
+  background-color: gray;
+  font-weight: bolder;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+.ap{
+  margin-top: 30px;
+  padding: 50px;
+  transform: translateX(460px);
+  text-align: center;
+  width: fit-content;
+  color: rgb(11, 11, 11);
+  background-color: gainsboro;
+}
+.num{
+  padding: 50px;
+  transform: translateX(560px);
+   width: fit-content;
+   background-color: gainsboro;
+}
+
+.box2{
+  width: 100vw;
+  font-size:large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
