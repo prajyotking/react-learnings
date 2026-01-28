@@ -14,8 +14,6 @@ Remix Icon is a set of open-source neutral-style system symbols for designers an
 [![icon demo](./.github/files/preview.svg)](https://remixicon.com)
 View the full set of Remix Icons at [remixicon.com](https://remixicon.com).
 
-
-
 ## Usage
 
 ### Basic Usage
@@ -58,8 +56,8 @@ Copy the following code and add it to the &lt;head&gt; tag of your HTML document
 
 ```html
 <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-    rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+  rel="stylesheet"
 />
 ```
 
@@ -74,8 +72,7 @@ Download [`remixicon.css`](https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/re
 Add icon with class name, class name rule: ri-{name}-{style}
 
 ```html
-<i class="ri-admin-line"></i>
-<i class="ri-admin-fill"></i>
+<i class="ri-admin-line"></i> <i class="ri-admin-fill"></i>
 ```
 
 > **Note:** We changed the class name prefixes from `remixicon-` to `ri` from v2.0.0;
@@ -88,17 +85,27 @@ RemixIcon can be resized by CSS class integrated by `remixicon.css` . Icons inhe
 
 ```html
 <div style="font-size: 24px;">
-  <i class="ri-admin-line ri-fw"></i> <!-- fixed width -->
-  <i class="ri-admin-line ri-xxs"></i> <!-- 0.5em -->
-  <i class="ri-admin-line ri-xs"></i> <!-- 0.75em -->
-  <i class="ri-admin-line ri-sm"></i> <!-- 0.875em -->
-  <i class="ri-admin-line ri-1x"></i> <!-- 1em -->
-  <i class="ri-admin-line ri-lg"></i> <!-- 1.3333em -->
-  <i class="ri-admin-line ri-xl"></i> <!-- 1.5em -->
-  <i class="ri-admin-line ri-2x"></i> <!-- 2em -->
-  <i class="ri-admin-line ri-3x"></i> <!-- 3em -->
+  <i class="ri-admin-line ri-fw"></i>
+  <!-- fixed width -->
+  <i class="ri-admin-line ri-xxs"></i>
+  <!-- 0.5em -->
+  <i class="ri-admin-line ri-xs"></i>
+  <!-- 0.75em -->
+  <i class="ri-admin-line ri-sm"></i>
+  <!-- 0.875em -->
+  <i class="ri-admin-line ri-1x"></i>
+  <!-- 1em -->
+  <i class="ri-admin-line ri-lg"></i>
+  <!-- 1.3333em -->
+  <i class="ri-admin-line ri-xl"></i>
+  <!-- 1.5em -->
+  <i class="ri-admin-line ri-2x"></i>
+  <!-- 2em -->
+  <i class="ri-admin-line ri-3x"></i>
+  <!-- 3em -->
   ...
-  <i class="ri-admin-line ri-10x"></i> <!-- 10em -->
+  <i class="ri-admin-line ri-10x"></i>
+  <!-- 10em -->
 </div>
 ```
 
@@ -110,15 +117,15 @@ Download [`remixicon.symbol.svg`](https://cdn.jsdelivr.net/npm/remixicon@2.5.0/f
 
 ```html
 <svg class="remix">
-    <use xlink:href="your-path/remixicon.symbol.svg#ri-admin-fill"></use>
+  <use xlink:href="your-path/remixicon.symbol.svg#ri-admin-fill"></use>
 </svg>
 ```
 
 ```css
 .remix {
-    width: 24px;
-    height: 24px;
-    fill: #333;
+  width: 24px;
+  height: 24px;
+  fill: #333;
 }
 ```
 
@@ -142,13 +149,13 @@ pnpm install @remixicon/react
 import { RiHeartFill } from "@remixicon/react";
 
 const MyComponent = () => {
-    return (
-        <RiHeartFill
-            size={36} // set custom `width` and `height`
-            color="red" // set `fill` color
-            className="my-icon" // add custom class name
-        />
-    );
+  return (
+    <RiHeartFill
+      size={36} // set custom `width` and `height`
+      color="red" // set `fill` color
+      className="my-icon" // add custom class name
+    />
+  );
 };
 ```
 
@@ -172,7 +179,7 @@ import { RiHeartFill } from "@remixicon/vue";
 </script>
 
 <template>
-    <RiHeartFill size="36px" color="red" className="my-icon" />
+  <RiHeartFill size="36px" color="red" className="my-icon" />
 </template>
 ```
 
@@ -194,25 +201,29 @@ If there is no suitable icon for your usage scenario, you can create an [issue](
 
 We use [`tags.json`](https://github.com/Remix-Design/remixicon/blob/master/tags.json) file to manage the search keywords of our [website](https://remixicon.com). But at the moment, we don't have a good automatic method to complete the keywords for each icon. So we hope you can help us to improve the `tags.json` file by creating [issues](https://github.com/Remix-Design/remixicon/issues), sending emails, or "pull request" of tags.json file to make the search engine better. Especially when one of our icons matches your scene but you don't find the icon with your keywords.
 
-
-
 ## Sub-Projects
 
 #### RemixIcon-MCP
+
 Allows you to quickly describe your needs in natural language within your IDE or AI-assisted environment. AI automatically selects the most suitable icons for your current functionality through the MCP (Model Context Protocol) server, eliminating the need for manual searching.
 [RemixIcon-MCP](https://github.com/Remix-Design/RemixIcon-MCP)
 
 #### RemixIcon-Figma-Plugin
+
 You can quickly access RemixIcon through the plugin in Figma, just as convenient as using the official website.
 [Official Plugin Link](https://www.figma.com/community/plugin/1089569154784319246/remixicon)
 
 #### RemixIcon-Slides
+
 PowerPoint and Keynote versions of Remix Icon, allowing direct style editing within PPT or Keynote.
 [RemixIcon-Slides](https://github.com/Remix-Design/RemixIcon-Slides)
 
 ## License
 
-Remix Icon is based on the [Apache License Version 2.0](https://github.com/Remix-Design/remixicon/blob/master/License) license. Feel free to use these icons in your products and distribute them. We would be very grateful if you mentioned "Remix Icon" in your product info, but it's not required. The only thing we ask is that these icons are not for sale.
+Remix Icon is licensed under the [Remix Icon License v1.0](https://github.com/Remix-Design/remixicon/blob/master/License). Feel free to use these icons in your products and distribute them. We would be very grateful if you mentioned "Remix Icon" in your product info, but it's not required.
+Thank you.
+
+Effective January 2026, we have updated our license agreement. If you have any questions, you are welcome to discuss them [here](https://github.com/Remix-Design/RemixIcon/issues/1069#issue-3853235164).
 
 ## Support Us
 

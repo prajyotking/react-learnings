@@ -14,8 +14,6 @@ Remix Icon 是一套面向设计师和开发者的开源图标库。我们在设
 [![icon demo](./.github/files/preview.svg)](https://remixicon.com)
 前往官网查看整套图标库 [remixicon.com](https://remixicon.com).
 
-
-
 ## 使用说明
 
 ### 基本用法
@@ -59,8 +57,8 @@ import 'remixicon/fonts/remixicon.css'
 
 ```html
 <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-    rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+  rel="stylesheet"
 />
 ```
 
@@ -75,8 +73,7 @@ import 'remixicon/fonts/remixicon.css'
 引入 Remix Icon 图标库后，就可以在 web 项目中使用了，只要在使用图标的时候将图标名称作为类名就可以了。类名规则：ri-{name}-{style}
 
 ```html
-<i class="ri-admin-line"></i>
-<i class="ri-admin-fill"></i>
+<i class="ri-admin-line"></i> <i class="ri-admin-fill"></i>
 ```
 
 > **注意：** 从 v2.0.0 开始，我们修改了 class 名称的前缀，从 `remixicon-` 改为了 `ri-`;
@@ -89,17 +86,27 @@ import 'remixicon/fonts/remixicon.css'
 
 ```html
 <div style="font-size: 24px;">
-  <i class="ri-admin-line ri-fw"></i> <!-- fixed width -->
-  <i class="ri-admin-line ri-xxs"></i> <!-- 0.5em -->
-  <i class="ri-admin-line ri-xs"></i> <!-- 0.75em -->
-  <i class="ri-admin-line ri-sm"></i> <!-- 0.875em -->
-  <i class="ri-admin-line ri-1x"></i> <!-- 1em -->
-  <i class="ri-admin-line ri-lg"></i> <!-- 1.3333em -->
-  <i class="ri-admin-line ri-xl"></i> <!-- 1.5em -->
-  <i class="ri-admin-line ri-2x"></i> <!-- 2em -->
-  <i class="ri-admin-line ri-3x"></i> <!-- 3em -->
+  <i class="ri-admin-line ri-fw"></i>
+  <!-- fixed width -->
+  <i class="ri-admin-line ri-xxs"></i>
+  <!-- 0.5em -->
+  <i class="ri-admin-line ri-xs"></i>
+  <!-- 0.75em -->
+  <i class="ri-admin-line ri-sm"></i>
+  <!-- 0.875em -->
+  <i class="ri-admin-line ri-1x"></i>
+  <!-- 1em -->
+  <i class="ri-admin-line ri-lg"></i>
+  <!-- 1.3333em -->
+  <i class="ri-admin-line ri-xl"></i>
+  <!-- 1.5em -->
+  <i class="ri-admin-line ri-2x"></i>
+  <!-- 2em -->
+  <i class="ri-admin-line ri-3x"></i>
+  <!-- 3em -->
   ...
-  <i class="ri-admin-line ri-10x"></i> <!-- 10em -->
+  <i class="ri-admin-line ri-10x"></i>
+  <!-- 10em -->
 </div>
 ```
 
@@ -111,15 +118,15 @@ import 'remixicon/fonts/remixicon.css'
 
 ```html
 <svg class="remix">
-    <use xlink:href="存放路径/remixicon.symbol.svg#ri-admin-fill"></use>
+  <use xlink:href="存放路径/remixicon.symbol.svg#ri-admin-fill"></use>
 </svg>
 ```
 
 ```css
 .remix {
-    width: 24px;
-    height: 24px;
-    fill: #333;
+  width: 24px;
+  height: 24px;
+  fill: #333;
 }
 ```
 
@@ -143,13 +150,13 @@ pnpm install @remixicon/react
 import { RiHeartFill } from "@remixicon/react";
 
 const MyComponent = () => {
-    return (
-        <RiHeartFill
-            size={36} // 设置大小
-            color="red" // 设置颜色
-            className="my-icon" // 添加自定义样式名
-        />
-    );
+  return (
+    <RiHeartFill
+      size={36} // 设置大小
+      color="red" // 设置颜色
+      className="my-icon" // 添加自定义样式名
+    />
+  );
 };
 ```
 
@@ -173,11 +180,9 @@ import { RiHeartFill } from "@remixicon/vue";
 </script>
 
 <template>
-    <RiHeartFill size="36px" color="red" className="my-icon" />
+  <RiHeartFill size="36px" color="red" className="my-icon" />
 </template>
 ```
-
-
 
 ## 协作共建
 
@@ -193,35 +198,32 @@ import { RiHeartFill } from "@remixicon/vue";
 
 目前我们的[图标官网](https://remixicon.com)是通过[`tags.json`](https://github.com/Remix-Design/remixicon/blob/master/tags.json)文件来管理搜索关键词的，目前我们已经为所有图标添加了中文关键词，因此我们可以通过中文对图标进行搜索和定位；但是由于关键词不是很健全，所以用户还是经常无法通过某个特定关键词搜索到已有图标。而目前我们还没有一个很好的自动化策略来穷举每一个图标的关键词，只能通过人肉添加的方式来进行完善，希望用户可以通过提[issue](https://github.com/Remix-Design/remixicon/issues) 或者 pull request 的方式来帮我们一块完善维护 `tags.json`，让搜索功能变得更加好用。
 
-
-
 ## 相关项目
 
 #### RemixIcon-MCP
+
 允许你在 IDE 或 AI 辅助环境中通过自然语言描述快速需求，AI 通过 MCP（Model Context Protocol）服务器帮你自动选择最适合你当前功能的图标，无需手动翻找。
 [RemixIcon-MCP](https://github.com/Remix-Design/RemixIcon-MCP)
 
 #### RemixIcon-Figma-Plugin
+
 你可以在 Figma 中通过插件来快速获取 RemixIcon，和官网一样好用。
 [官方插件地址](https://www.figma.com/community/plugin/1089569154784319246/remixicon)
 
 #### RemixIcon-Slides
+
 Remix Icon 的 PPT 版本和 Keynote 版本，可在 PPT 或 Keynote 中直接编辑样式。
-[RemixIcon-Slides](https://github.com/Remix-Design/RemixIcon-Slides) 
-
-
+[RemixIcon-Slides](https://github.com/Remix-Design/RemixIcon-Slides)
 
 ## 协议许可
 
-Remix Icon 是基于 [Apache License Version 2.0](https://github.com/Remix-Design/remixicon/blob/master/License) 开源协议的。请放心使用和分享本图标库，您可以查看协议详情来了解详细的开源策略。如果您能在您的产品介绍中署名 Remix Icon，我们将会非常感激，但这并不是必须的。唯一需要注意的是，您不能二次销售本图标库中的图标，否则我们会进行追究。
+Remix Icon 是基于 [Remix Icon License v1.0](https://github.com/Remix-Design/remixicon/blob/master/License) 开源协议的。请放心使用和分享本图标库，您可以查看协议详情来了解详细的开源策略。如果您能在您的产品介绍中署名 Remix Icon，我们将会非常感激，但这并不是必须的。
 
-
+自 2026 年 1 月起，我们更新了许可协议。如果您有任何疑问，欢迎在[此处](https://github.com/Remix-Design/RemixIcon/issues/1069#issue-3853235164)进行讨论。
 
 ## 支持我们
 
 很简单，只需要点一下 GitHub 本项目右上角的小星星就可以了！精神鼓励就是支持我们持续维护本项目的最大动力。请我们喝杯咖啡当然也没问题哈哈（我们也确实挺缺钱的）~
-
-
 
 ## 关注我们
 

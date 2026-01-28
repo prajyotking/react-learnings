@@ -1,0 +1,54 @@
+h1{
+  position: absolute;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
+}
+
+.nav{
+    background-color: rgb(11, 69, 122);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+ color: white;
+}
+.nav div{
+    display: flex;
+    gap: 15px;
+    font-size: larger;
+    font-weight: 600;
+  
+}
+.prCat{
+    font-size: medium;
+  margin-top: 15px ;
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(25, 58, 25);
+    cursor: pointer;
+    
+}
+button:active{
+    transform:scale(0.95)
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
